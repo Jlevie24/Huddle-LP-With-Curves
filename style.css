@@ -1,0 +1,339 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--clr-pink: hsl(322, 100%, 66%);
+	--clr-lightpink: hsl(321, 100%, 78%);
+	--clr-red: hsl(0, 100%, 63%);
+
+	--clr-dark-cyan: hsl(192, 100%, 9%);
+	--clr-pale-blue: hsl(207, 100%, 98%);
+	
+	--clr-white: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'poppins', sans-serif;
+}
+
+h1,
+h2,
+p {
+	color: var(--clr-dark-cyan);
+	margin-bottom: 1rem;
+}
+
+p {
+	line-height: 1.5;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.width-container {
+	width: min(90%, 1200px);
+	margin-inline: auto;
+}
+
+.btn {
+	text-decoration: none;
+	border: 1px solid var(--clr-pink);
+	border-radius: 1.25rem;
+	padding: 7px 25px;
+}
+
+.pink-btn {
+	background: var(--clr-pink);
+	color: var(--clr-white);
+	padding: 15px 45px;
+	font-size: .85rem;
+	font-weight: bold;
+	border-radius: 1.75rem;
+}
+
+body {
+	margin: 0;
+}
+
+/* Main Section */
+
+main {
+	text-align: center;
+	padding-bottom: 6rem;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.header-btn {
+	color: var(--clr-pink);
+}
+
+@media (max-width: 450px) {
+	header {
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+main article {
+	margin-block: 4rem;
+}
+
+article p {
+	width: min(90%, 450px);
+	margin-inline: auto;
+}
+
+.subheader {
+	margin-bottom: 2rem;
+}
+
+.screen-mockups {
+	width: 650px;
+	margin: 0 auto;
+}
+
+.facts-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	margin-top: 3rem;
+	width: min(90%, 600px);
+	margin-inline: auto;
+}
+
+@media (max-width: 450px) {
+	.facts-container {
+		flex-direction: column;
+		justify-content: center;
+		gap: 4rem 0;
+	}
+}
+
+.figure {
+	font-family: 'poppins';
+	font-weight: 900;
+	font-size: 3rem;
+	margin-block: 0;
+}
+
+.fact {
+	margin: 0;
+	font-size: .9rem;
+	color: var(--clr-dark-cyan);
+}
+
+.fact-icons {
+	width: 40px;
+}
+
+/* Wavy Section Top Blue #1 */
+
+.wavy-section {
+	background: var(--clr-pale-blue);
+	padding-block: 2rem;
+}
+
+.wavy-top,
+.wavy-bottom {
+	width: 100%;
+}
+
+.flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 3rem;
+}
+
+.illustration {
+	width: 400px;
+}
+
+/* Wavy Section Middle White #2 */
+
+.wavy-section-middle {
+	background: var(--clr-white);
+	padding-block: 2rem;
+}
+
+.flex-container-reverse {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	gap: 3rem;
+}
+
+/* Wavy Sections on Mobile */
+
+@media (max-width: 500px) {
+	.flex-container,
+	.flex-container-reverse {
+		flex-direction: column-reverse;
+		justify-content: center;
+		text-align: center;
+		gap: 4rem 0;
+	}
+}
+
+/* Final CTA Section */
+
+.final-cta-section {
+	text-align: center;
+	padding-block: 10rem;
+}
+
+.final-cta-section h2 {
+	margin-bottom: 3rem;
+}
+
+/* Footer */
+
+footer {
+	background: var(--clr-dark-cyan);
+	padding-block: 5rem;
+}
+
+footer p,
+footer h3,
+footer a {
+	color: var(--clr-white);
+}
+
+footer h3 {
+	width: min(90%, 300px);
+}
+
+footer p {
+	width: min(90%, 300px);
+	margin-block: 0;
+}
+
+footer .logo {
+	margin-bottom: 1rem;
+}
+
+.bg-footer-top {
+	width: 100%;
+}
+
+.two-col {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 2rem;
+}
+
+.description {
+	margin-bottom: 1rem;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: .5rem 0;
+}
+
+.social-list {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 3rem;
+}
+
+.social-list a {
+	font-size: 1.35rem;
+}
+
+.footer-cta {
+	width: min(90%, 500px);
+}
+
+.footer-cta h3,
+.footer-cta p {
+	margin-bottom: 1rem;
+}
+
+input,
+button {
+	border: none;
+	outline: none;
+	padding: 10px 25px;
+	border-radius: 5px;
+}
+
+input {
+}
+
+button {
+	background: var(--clr-pink);
+	color: var(--clr-white);
+	cursor: pointer;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 2rem;
+}
+
+.attribution { 
+	font-size: 11px; 
+	text-align: center;
+	margin: 3rem auto 0; 
+}
+
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 750px) {
+	.two-col {
+		flex-direction: column-reverse;
+	}
+
+	.footer-cta {
+		width: 100%;
+	}
+
+	form {
+		grid-template-columns: 1fr;
+	}
+
+	input {
+		width: 100%;
+	}
+
+	button {
+		margin-left: auto;
+		width: 50%;
+	}
+}
+
+
+
+
+
+
